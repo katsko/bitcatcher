@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>BitCatcher</title>
+    <link rel='shortcut icon' href='img/favicon.png' type='image/png'>
+    <link href='css/main.css' rel='stylesheet'>
+    <script src='js/player.js'></script>
+    <script src='js/coin.js'></script>
+</head>
+<body>
+    <div class='wrap'>
+        <div id='field'></div>
+        <div id='balance_bar'></div>
+    </div>
+    <div id='first' class='info'>
+        <div>
+            <p>You are trader
+            <p>CryptoTrader
+            <p class='theme'>Your life is currencies
+            <p class='sub_theme'>CryptoCurrencies
+            <p><button onclick='view_second()'>Next (press n)</button>
+        </div>
+    </div>
+
+    <div id='second' class='info'>
+        <div>
+            <p>Catch bitcoins
+            <p>Not dollars!
+            <p>Use arrows (← ↑ ↓ →)
+            <p><button onclick='current_coins.on_press_enter()'>Start (press Enter)</button>
+        </div>
+    </div>
+    
+    <div id='game_over' class='info'>
+        <div>
+            <p class='game_over'>Game over
+            <p class='bitcoin_collapsed'>Bitcoin collapsed
+            <p class='bitcoin_count'>You catched <span id='count'>0</span> bitcoins
+            <p class=='replay_button'><button onclick='document.location.reload()'>Reload (press r)</button>
+        </div>
+    </div>
+    
+    <div style='display:none'>Balance:<span id='balance'></span></div>
+    <script>
+        draw_table();
+        color_start_cell();
+        balance_draw();
+    </script>
+</body>
+</html>

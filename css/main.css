@@ -1,0 +1,108 @@
+html {
+    font-size: 10px;
+    background: black;
+    color: white;
+}
+
+div.wrap {
+    display: flex;
+    padding: 10px;
+}
+
+div#field {
+    width: 530px;
+}
+
+div#balance_bar {
+    width: 7px;
+    margin-top: 240px;
+    height: 240px;
+    /*background-color: #ff9100;*/
+    background-color: #ffef00;
+}
+
+#field table {
+    border-collapse: collapse;
+    border: 1px solid #eee;
+}
+#field table td {
+    background-color: black;
+    border: 0;
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    font-size: 5px;
+}
+
+.div_cell {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 11px;
+}
+
+.info {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    width: 450px;
+    height: 425px;
+    background-color: #434343;
+    color: white;
+    font-family: monospace;
+}
+
+p {
+    margin: 35px;
+}
+
+div#first p {
+    font-size: 25px;
+}
+
+div#first p.theme {
+    font-size: 50px;
+}
+
+div#first p.sub_theme {
+    font-size: 30px;
+}
+
+div#second {
+    display: none;
+}
+
+div#second p {
+    font-size: 20px;
+}
+
+div#game_over {
+    display: none;
+    top: 100px;
+    left: 45px;
+    width: 450px;
+    height: 300px;
+    background-color: #434343;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+p.game_over {
+    font-size: 50px;
+    color: red;
+}
+p.bitcoin_collapsed {
+    font-size: 20px;
+}
+p.bitcoin_count {
+    font-size: 12px;
+}
+#count {
+    font-size: 14px;
+    font-weight: bold;
+}
